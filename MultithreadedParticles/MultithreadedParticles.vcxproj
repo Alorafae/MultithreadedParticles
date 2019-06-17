@@ -116,9 +116,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MockTests.cpp" />
     <ClCompile Include="MTParticles.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MockTests.h" />
     <ClInclude Include="MTParticles.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
