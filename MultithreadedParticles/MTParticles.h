@@ -27,7 +27,7 @@ private:
   glm::vec3 dir;
 
   Particle *parts;
-  std::vector<std::thread*> threads;
+  std::vector<std::thread> threads;
 
   unsigned nThreads = MAX_THREADS;
 };
