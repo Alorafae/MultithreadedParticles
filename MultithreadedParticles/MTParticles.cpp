@@ -43,9 +43,9 @@ void MTParticleSystem::Update(float dt)
 void MTParticleSystem::MTSimulate(float dt, unsigned id)
 {
   unsigned start = id * (MAX_PARTICLES / MAX_THREADS);
-  unsigned end = MAX_PARTICLES / MAX_THREADS;
+  unsigned end = start + (MAX_PARTICLES / MAX_THREADS);
 
-  if (end >= MAX_PARTICLES)
+  if (end > MAX_PARTICLES)
   {
     printf("Fix max particles / max threads error\n");
     return;

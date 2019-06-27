@@ -23,6 +23,9 @@ public:
   virtual void Update(float dt);
   virtual void MTSimulate(float dt, unsigned id);
 
+  void Sort(void);
+  void MTSort(void);
+
   void SetThreadingStyle(bool style);
   void SetThreads(unsigned maxThreads);
 private:
